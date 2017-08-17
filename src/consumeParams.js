@@ -9,7 +9,7 @@ export default function consumeParams(req, nParams) {
     }
 
     if (req.params.length < nParams) {
-        throw new Error(`Not enough params to consume. The request contains ${req.params.lenght} params, ${nParams} were requested.`)
+        throw new Error(`Not enough params to consume. The request contains ${req.params.length} params, ${nParams} were requested.`)
     }
 
     return req.params.splice(req.params.length - nParams)
